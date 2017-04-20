@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView" customModule="淘妈咪" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="e5K-FO-kUH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="index_slogan.png" translatesAutoresizingMaskIntoConstraints="NO" id="2VD-Fe-Pnj">
+                    <rect key="frame" x="20" y="30" width="335" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="3gH-gR-IYc"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-6e-NsA">
+                    <rect key="frame" x="50" y="145" width="135" height="150"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.85098039215686272" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="V4K-NA-ski"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="淘宝商品">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXx-cM-czg">
+                    <rect key="frame" x="50" y="300" width="135" height="75"/>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.80000000000000004" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="jpN-2x-eJB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="站内商品">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t79-8u-7ED">
+                    <rect key="frame" x="190" y="145" width="135" height="230"/>
+                    <color key="backgroundColor" red="0.98431372549019602" green="0.40000000000000002" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="高拥商品">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t79-8u-7ED" firstAttribute="width" secondItem="vQh-6e-NsA" secondAttribute="width" id="7EB-Ig-Ylf"/>
+                <constraint firstItem="2VD-Fe-Pnj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="EY9-Nc-WZ4"/>
+                <constraint firstAttribute="bottom" secondItem="e5K-FO-kUH" secondAttribute="bottom" id="FSV-EP-Ve4"/>
+                <constraint firstItem="t79-8u-7ED" firstAttribute="bottom" secondItem="pXx-cM-czg" secondAttribute="bottom" id="IV0-u3-IZb"/>
+                <constraint firstItem="pXx-cM-czg" firstAttribute="width" secondItem="vQh-6e-NsA" secondAttribute="width" id="Iph-ml-4Wx"/>
+                <constraint firstAttribute="trailing" secondItem="t79-8u-7ED" secondAttribute="trailing" constant="50" id="K99-sz-o49"/>
+                <constraint firstItem="2VD-Fe-Pnj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="NBc-DX-600"/>
+                <constraint firstItem="pXx-cM-czg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="UeR-27-3FM"/>
+                <constraint firstAttribute="trailing" secondItem="e5K-FO-kUH" secondAttribute="trailing" id="X46-vT-KRM"/>
+                <constraint firstItem="t79-8u-7ED" firstAttribute="leading" secondItem="pXx-cM-czg" secondAttribute="trailing" constant="5" id="cIs-r7-ZgW"/>
+                <constraint firstItem="vQh-6e-NsA" firstAttribute="top" secondItem="2VD-Fe-Pnj" secondAttribute="bottom" constant="15" id="cKw-3e-jhO"/>
+                <constraint firstItem="vQh-6e-NsA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="kIS-mG-uYQ"/>
+                <constraint firstItem="e5K-FO-kUH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lcT-Wi-FUu"/>
+                <constraint firstItem="e5K-FO-kUH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oMs-NI-fCj"/>
+                <constraint firstAttribute="trailing" secondItem="2VD-Fe-Pnj" secondAttribute="trailing" constant="20" id="pXI-KI-894"/>
+                <constraint firstItem="pXx-cM-czg" firstAttribute="top" secondItem="vQh-6e-NsA" secondAttribute="bottom" constant="5" id="t4r-Xi-SMc"/>
+                <constraint firstItem="t79-8u-7ED" firstAttribute="top" secondItem="vQh-6e-NsA" secondAttribute="top" id="xfj-1W-Re5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="highB" destination="t79-8u-7ED" id="jap-Ds-LbH"/>
+                <outlet property="insideB" destination="pXx-cM-czg" id="ql1-6X-YJq"/>
+                <outlet property="shopingB" destination="vQh-6e-NsA" id="eZa-vA-k7I"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="-182"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="index_bg.png" width="1080" height="1199"/>
+        <image name="index_slogan.png" width="1080" height="328"/>
+    </resources>
+</document>
